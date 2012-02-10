@@ -1,0 +1,13 @@
+------------------------------------------------------------------------
+r246 | rabbit | 2011-02-10 00:05:40 +0000 (Thu, 10 Feb 2011) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+Don't heed the autoshow option if the player is in combat. Noone wants that.
+------------------------------------------------------------------------
+r245 | rabbit | 2010-12-19 02:08:13 +0000 (Sun, 19 Dec 2010) | 1 line
+Changed paths:
+   M /trunk/sack.lua
+
+Make sure that the current error object is always set, even if the sack is open while a new error occurs and we can't find the currently viewed error in the new sack content.
+------------------------------------------------------------------------

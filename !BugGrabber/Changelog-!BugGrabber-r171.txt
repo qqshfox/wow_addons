@@ -1,0 +1,59 @@
+------------------------------------------------------------------------
+r171 | rabbit | 2011-03-10 21:56:34 +0000 (Thu, 10 Mar 2011) | 1 line
+Changed paths:
+   M /trunk/BugGrabber.lua
+
+Plug error when grabbing blocked addon action events.
+------------------------------------------------------------------------
+r170 | rabbit | 2011-03-10 12:11:13 +0000 (Thu, 10 Mar 2011) | 1 line
+Changed paths:
+   M /trunk/BugGrabber.lua
+
+Oops the chat link stuff wasn't supposed to go in until next major version, but nevermind - streamlined it a bit now.
+------------------------------------------------------------------------
+r169 | rabbit | 2011-03-10 12:01:51 +0000 (Thu, 10 Mar 2011) | 1 line
+Changed paths:
+   M /trunk/BugGrabber.lua
+
+Make sure we get the real error handler if possible.
+------------------------------------------------------------------------
+r168 | rabbit | 2011-03-09 01:20:49 +0000 (Wed, 09 Mar 2011) | 5 lines
+Changed paths:
+   M /trunk/BugGrabber.lua
+
+* Clean out unused locales and sort keys alphabetically so we mirror the wowace l10n system
+* Store locals in its own property on the error object so that it's easier to separate for a potential display
+* Only compare session errors when scanning for duplicates
+* If it has been more than 30 seconds since the last error and no display addon is detected, print a new message saying that a bug has been detected
+
+------------------------------------------------------------------------
+r167 | rabbit | 2011-03-07 09:20:21 +0000 (Mon, 07 Mar 2011) | 1 line
+Changed paths:
+   M /trunk/BugGrabber.lua
+
+No need to iterate when GetAddOnInfo accepts names.
+------------------------------------------------------------------------
+r166 | rabbit | 2011-03-06 16:21:04 +0000 (Sun, 06 Mar 2011) | 1 line
+Changed paths:
+   A /trunk/embedding.txt
+
+Add some notes on embedding.
+------------------------------------------------------------------------
+r165 | rabbit | 2011-03-06 16:12:25 +0000 (Sun, 06 Mar 2011) | 5 lines
+Changed paths:
+   M /trunk/BugGrabber.lua
+   A /trunk/load.xml
+   M /trunk/locales.lua
+
+* Allow BugGrabber to be embedded, although it's not something I recommend. If more than one instance of BugGrabber tries to load up, only the first one will prevail; there's no versioning. If a standalone !BugGrabber addon exists, it will always be preferred.
+* Has not been tested while running alongside an embedded copy; hopefully Archarodim will test fully.
+* Change some strings to use the default system color because it's nicer. I forgot to make it update according to the users configured system color, but will do so at a later point. Also deleted some unused localization strings.
+* Added a load.xml file that can be referenced in the TOC of a parent addon for embedding purposes.
+
+------------------------------------------------------------------------
+r164 | rabbit | 2010-11-27 01:23:31 +0000 (Sat, 27 Nov 2010) | 1 line
+Changed paths:
+   M /trunk/BugGrabber.lua
+
+Forgot to change internal reference to :StoreError.
+------------------------------------------------------------------------

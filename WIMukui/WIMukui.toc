@@ -1,0 +1,7 @@
+## Interface: 40000
+## Title: WIMukui 
+## Notes: WIM Skin
+## Author: Midnitte (modified from Stewarta (Emerald Dream EU))
+## Dependencies: WIM
+skin.xml
+skin.lua
